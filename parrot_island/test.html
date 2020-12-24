@@ -1,0 +1,19 @@
+<img class=mySlides src="img/parrot_01.jpg" alt="Food from The Finnish Bistro">
+<img class=mySlides src="img/parrot_02.jpg" alt="The interior of The Finnish Bistro">
+<img class=mySlides src="img/parrot_03.jpg" alt="The exterior of The Finnish Bistro">
+
+<script>
+    var myIndex = 0;
+    carousel();
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 4000); // Change image every 4 seconds
+    }
+</script>

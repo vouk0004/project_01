@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parrot Island Inc</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:bold,%20regular,%20semibold">
+    <link rel="stylesheet" href="https://use.typekit.net/ipo0kfw.css">
+    <link rel="icon" type="image/png" href="img/favicon_16.png">
+
+
+</head>
+<body>
+<div class="container_home">
+    <header>
+        <a href="index.html"><img src="img/PI-Logo.png" alt="Parrot Island logo" class="logo"></a>
+        <nav>
+            <a href="products.html" class="menu">products</a>
+            <a href="articles.html" class="menu">articles</a>
+            <a href="contact.html" class="menu">contact</a>
+        </nav> <!-- END OF NAV -->
+
+        <div class="banner">
+            <h1>One stop shop for all of your bird's needs!</h1>
+            <a href="https://parrotislandinc.com/catalog/login.php" target="_blank"><h4>My<br>Account</h4></a>
+            <a href="checkout.html"><img src="img/cart.png" alt="Cart icon" class="cart"></a>
+        </div>
+    </header>
+
+    <img class="mySlides fade"
+         src="img/parrot_01.jpg" alt="Kid with parrot">
+    <img class="mySlides fade"
+         src="img/parrot_02.jpg" alt="Green bird outside">
+    <img class="mySlides fade"
+         src="img/parrot_03.jpg" alt="Parrot with toy">
+
+    <script>
+        var myIndex = 0;
+        carousel();
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 4000); // Change image every 4 seconds
+        }
+    </script>
+
+    <br>
+
+    <main>
+        <h2>Who We Are</h2>
+        <br>
+        <p>Parrot Island is a supply shop that provides a vast array of bird food, toys, cages, and more to local bird-owners. We believe that birds are some of the more remarkable animals on the planet, and in turn make some of the best pets. As a family-owned and operated small business, we are always delighted to welcome new customers and help them find whatever they may be looking for. While we do sell a few baby birds each year, we believe the selling of large quantities of birds to be unethical, and therefore are a bird supply store first and foremost. While we've been able to stay on our feet during the current pandemic, we can't pretend that it hasn't been difficult for us, so we would like to thank you all for your tremendous support.</p>
+    </main>
+
+    <footer>
+        <span class="shopinfo">
+                7404 Washington Ave. So.
+            <br>
+                Eden Prairie, MN 55344
+        </span>
+        <span class="shopinfo">
+                952-928-9985 <br>
+                info@parrotislandinc.com
+            </span>
+
+        <span id="social">
+            <a href="https://www.facebook.com/Parrotislandinc" target="_blank"><img src="img/Facebook.png" alt="Facebook icon" class="social"></a>
+            <a href="https://www.instagram.com/explore/locations/1028963607/parrot-island-inc/" target="_blank"><img src="img/Instagram.png" alt="Instagram icon" class="social"></a>
+            <a href="https://twitter.com/parrot_islanc_inc" target="_blank"><img src="img/Twitter.png" alt="Twitter icon" class="social"></a>
+            </span>
+
+    </footer>
+
+</div> <!--End of Container DIV-->
+</body>
+</html>

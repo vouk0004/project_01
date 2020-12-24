@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*hover underline effect for navigation links*/
+a.menu:before {
+    content: "";
+    position: absolute;
+    width: 78%;
+    height: 3px;
+    bottom: 20px;
+    left: 23px;
+    background-color: #172E22;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+a.menu:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/*Prevents all hrefs from being underlined*/
+a{
+    text-decoration: none;
+}
+
+article {
+    width: 980px;
+    height: 125px;
+    background-color: #FFFFFF;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+aside.checkout{
+    width: 530px;
+    height: 340px;
+    background-color: #FFFFFF;
+    margin-left: 110px;
+    margin-top: 20px;
+}
+
+aside.checkout2{
+    width: 530px;
+    height: 340px;
+    background-color: #FFFFFF;
+    margin-left: 660px;
+    margin-top: -340px;
+}
+
+aside.contact{
+    width: 600px;
+    height: 215px;
+    background-color: #FFFFFF;
+    margin-left: 50px;
+}
+
+aside.contact2{
+    width: 330px;
+    height: 215px;
+    background-color: #FFFFFF;
+    margin-left: 700px;
+    margin-top: -215px;
+}
+
+/*first column of product categories*/
+aside.products {
+    width: 260px;
+    height: 500px;
+    background-color: #FFFFFF;
+    margin-left: 110px;
+}
+
+/*second column of product categories*/
+aside.products2 {
+    width: 260px;
+    height: 500px;
+    background-color: #FFFFFF;
+    margin-left: 413px;
+    margin-top: -500px;
+}
+
+/*third column of product categories*/
+aside.products3 {
+    width: 260px;
+    height: 500px;
+    background-color: #FFFFFF;
+    margin-left: 715px;
+    margin-top: -500px;
+}
+
+/*green ribbon with feathers on in under every nav bar*/
+.banner {
+    width: 1300px;
+    height: 100px;
+    background-image: url("img/feather_ribbon.png");
+    position: absolute;
+    bottom: 0;
+}
+
+/*Box around product icons*/
+.box {
+    width: 180px;
+    height: 180px;
+    background-color: #FFFFFF;
+    display: inline-block;
+    margin-top: 50px;
+    margin-right: 25px;
+    margin-left: 40px;
+    border-radius: 15px;
+    border: 2px #707070 solid;
+}
+
+.box:hover {
+    border: 2px #89dc65 solid;
+}
+
+button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    background-color: #FDD756;
+    border-radius: 20px;
+    border-width: 0;
+    width: 310px;
+    position: absolute;
+}
+
+button.sign-in {
+    margin-left: 110px;
+    margin-top: 80px;
+}
+
+button.cag {
+    margin-left: 110px;
+    margin-top: 196px;
+}
+
+button.more {
+    margin-left: 385px;
+    margin-top: 830px;
+}
+
+button:hover {
+    background-color: #CAB44B;
+    color: #FFFFFF;
+    transition: .8s ease;
+}
+
+
+.cart {
+    width: 60px;
+    height: 48px;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 1220px;
+}
+
+.container_articles {
+    width: 1300px;
+    height: 1670px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container_contact {
+    width: 1300px;
+    height: 850px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container_home {
+    width: 1300px;
+    height: 1150px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+footer {
+    width: 1300px;
+    height: 200px;
+    background-image: linear-gradient(to bottom,#FFFFFF, #838383);
+    position: absolute;
+    bottom: 0;
+}
+
+h1 {
+    font-family: "Phoreus Cherokee", serif;
+    font-weight: bolder;
+    font-size: 36px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-left: 5px;
+    margin-top: 28px;
+    text-shadow: 1px 1px 2px #382f2d;
+}
+
+h2{
+    font-family: "Phoreus Cherokee", serif;
+    font-weight: normal;
+    font-size: 30px;
+    color: #382f2d;
+}
+
+h2.edu {
+    font-family: "Phoreus Cherokee Semibold", serif;
+    font-weight: normal;
+    font-size: 24px;
+    color: #89dc65;
+    text-align: left;
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: "Phoreus Cherokee Semibold", serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #382f2d;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+/*For the authors on the "articles" page*/
+h3.author {
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+/*For the publication dates on the "articles" page*/
+h3.publish {
+    font-family: "Phoreus Cherokee", serif;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: left;
+    text-decoration: underline;
+    padding-top: 5px;
+    padding-bottom: 30px;
+
+}
+
+h3.or {
+    position: absolute;
+    margin-top: 158px;
+    margin-left: 250px;
+}
+
+h4{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 980px;
+    margin-top: -40px;
+    text-shadow: 1px 1px 2px #382f2d;
+}
+
+header {
+    width: 1300px;
+    height: 270px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+/*embedded map css*/
+iframe.map {
+    padding-right: 25px;
+    float: left;
+}
+
+img.fullcart {
+    height: 340px;
+    position: absolute;
+    margin-left: 110px;
+}
+
+/*Icon hover effect*/
+img.inside {
+    width: 180px;
+
+}
+
+img.inside:hover {
+    opacity: 0.5;
+}
+
+/*mail icon*/
+img.iconm {
+    float: left;
+    width: 45px;
+    margin-top: 40px;
+    padding-right: 15px;
+}
+
+/*phone icon*/
+img.iconp {
+    float: left;
+    width: 40px;
+    margin-top: 40px;
+    padding-right: 15px;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.line {
+    border-left: 6px solid #382f2d;
+    height: 340px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 20px;
+}
+
+.logo {
+    width: 310px;
+    margin-top:28px;
+}
+
+main {
+    width: 1080px;
+    height: 411px;
+    background-color: #FFFFFF;
+    position: absolute;
+    margin-left: 100px;
+}
+
+main.full {
+    width: 1300px;
+    height: 411px;
+    background-color: #FFFFFF;
+    position: absolute;
+    margin-left: 0;
+}
+
+.menu {
+    position:relative;
+    display: inline-block;
+    text-align: center;
+    padding: 25px;
+    color: #382f2d;
+    margin-top:20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.mySlides {
+    width: 860px;
+    height: 420px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    width: 882px;
+    height: 112px;
+    background-color: #FFFFFF;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    margin-left: 630px;
+    margin-top:-140px;
+}
+
+p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: left;
+    color: #382f2d;
+    line-height: 25px;
+}
+
+p.b2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: #382f2d;
+    line-height: 25px;
+    padding-top: 40px;
+}
+
+p.body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: #382f2d;
+    text-align: left;
+    line-height: 25px;
+}
+
+/*Opening paragraphs for products, articles, and contact pages*/
+.pac {
+    text-align: center;
+
+}
+
+.productcategories{
+    margin-top: -25px;
+}
+
+.shopinfo {
+    font-family: Montserrat, sans-serif;
+    font-weight: lighter;
+    font-size:13px;
+    color: #000000;
+    float: left;
+    padding-top: 85px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#social {
+    display:inline;
+    float: right;
+    padding-top: 85px;
+    padding-right: 10px;
+}
+
+.social {
+    width: 30px;
+    height: 30px;
+}
+
+#social a:hover {
+    opacity: 0.5;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+
